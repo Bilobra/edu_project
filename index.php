@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once 'header.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edusogno</title>
-</head>
+?>
 
-<body>
+<section>
+    <?php
+    if (isset($_SESSION["email"])) {
+        echo "<p>Hello ". $_SESSION["email"] ."</p>";
+        
+    } 
+    ?>
+</section>
+<section class="background">
+    <div class="img-wide container">
+        <img src="https://edusogno.com/logo-black.svg" alt="">
+    </div>
 
-</body>
-
-</html>
+</section>
