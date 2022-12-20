@@ -2,17 +2,18 @@
 include_once 'header.php';
 ?>
 
-<section class="signup-form">
+<section class="signup-form container">
 
-    <h2>Sign Up</h2>
+    <h2>Crea il tuo account</h2>
 
-    <form action="includes/signup.inc.php" method="post">
+    <form action="includes/signup.inc.php" method="post" class="form_input">
 
         <input type="text" name="name" placeholder="inserisci il tuo nome...">
         <input type="text" name="surname" placeholder="inserisci il tuo cognome...">
         <input type="text" name="email" placeholder="inserisci la tua email...">
         <input type="password" name="pwd" placeholder="inserisci la tua password..">
-        <button type="submit" name="submit">Sign Up</button>
+        <button type="submit" name="submit" class="button">Registrati</button>
+        <p class="login">Hai già un account? <a href='login.php' class="register">Accedi</a></p>
 
     </form>
     <?php
